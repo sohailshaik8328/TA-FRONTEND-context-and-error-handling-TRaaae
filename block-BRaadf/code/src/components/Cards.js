@@ -1,11 +1,14 @@
 import Card from "./Card";
+import { useContext } from "react";
+import ModeContext from "./ModeContext";
 
-function Cards({ isDarkMode }) {
+function Cards() {
+  let mode = useContext(ModeContext)
   return (
     <div className="cards_wrap">
-      <Card isDarkMode={isDarkMode} />
-      <Card isDarkMode={isDarkMode} />
-      <Card isDarkMode={isDarkMode} />
+      <Card  />
+      <Card  />
+      <Card  />
     </div>
   );
 }
